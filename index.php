@@ -35,7 +35,7 @@
                     <li><a href="#forum" >Forum</a></li>
                      <li><a data-toggle="modal" data-backdrop="false" href="#form_suggestion">
                          Créer un compte</a></li>
-                     <li><a href="#forum" >Se connecter</a></li>
+                     <li><a data-toggle="modal" data-backdrop="false" href="#form_connnect">Se connecter</a></li>
                      <li><a href="#forum" >Se déconnecter</a></li>
                     <li><a href="#contact" >Contact</a></li>
             </ul>
@@ -72,7 +72,7 @@
 
 </div>
 <?php include "view/Form_inscription.php";?>
-
+<?php include "view/Form_connexion.php";?>
  </main> 
  <footer >
  </footer>

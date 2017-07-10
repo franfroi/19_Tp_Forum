@@ -21,19 +21,21 @@
                     <form name="form_inscription" id="form_inscription" action="test.php">
                         <div class="form-group">
                             <label for="Pseudo">Pseudo</label>
-                            <input id="Pseudo" type="text" class="form-control" name ="Pseudo" placeholder="Votre Pseudo" required /><span id="spanspeudo">Min 8 caractères</span>
+                            <input id="Pseudo" type="text" class="form-control" name ="Pseudo" placeholder="Votre Pseudo 8 caractères min" autofocus /><span id="spanspeudo">Min 8 caractères</span>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input id="password" type="password" class="form-control" name ="password" placeholder="Votre Password" required /><span id="spanpassword">Min 8 caractères</span>
+                            <input id="password" type="password" class="form-control" name ="password" placeholder="Votre Password" required />
+                            <span id="spanpassword">Min 8 caractères</span>
                         </div>
                         <div class="form-group">
                             <label for="Verif_password">Vérification Password</label>
                             <input id="Verif_password" type="password" class="form-control" name ="Verif_password" placeholder="Vérification de votre Password" required/>
+                            <p id="span_verif_password">Password non identique</p>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input id="email" type="text" class="form-control" name="email" placeholder="Votre Email" required />
+                            <input id="email" type="text" class="form-control" name="email" placeholder="Votre Email" /><span id="spanemail ">Email non valide</span>
                         </div>
                        
                         <div class="form-group">
