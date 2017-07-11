@@ -1,0 +1,33 @@
+# 1 creation bases de donnees
+
+drop database if exists tp;
+
+
+CREATE DATABASE tp;
+#SUPPRESION DATABASE
+#DROP DATABASE ecoledunum;
+
+
+use tpuser;
+#COMMANDE CTRL+ENTER EXECUTE LA REQUETE  OU LA SOURIS SE TROUVE
+
+# CREATION TABLE
+
+CREATE TABLE user(
+id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(255),
+user_admin VARCHAR(255),
+user_user VARCHAR(255),
+uPassword VARCHAR(255),
+email VARCHAR(255),
+avatar VARCHAR(255),
+datecreate DATETIME
+);
+
+CREATE TABLE sujet(
+id INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY,
+titre VARCHAR(255),
+username_id INT(255), 
+datecreate DATETIME,
+FOREIGN KEY (username_id) REFERENCES user(id)
+);

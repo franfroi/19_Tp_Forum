@@ -1,4 +1,4 @@
-$(document).ready(function(e) {
+
     
 var $envoi = $('#envoi');
 var $form = $('#form_inscription');
@@ -18,7 +18,8 @@ window.onload = function() {
  $spanpassword.hide();
  $spanemail.hide();
  $span_verif_password.hide();
-$Pseudo.focusout(function(){
+
+ $form.submit(function(event){
                              if( $Pseudo.val().length < 8 ){
                                
                             $Pseudo.css("border-color","red");
@@ -34,11 +35,11 @@ $Pseudo.focusout(function(){
                               $Pseudo.css("border-color","green");
                              $spanspeudo.hide();
                          }
- }); 
+
 
 
        
- $password.focusout(function(){
+ 
                              if( $password.val().length < 8 ){
 
                             $password.css("border-color","red");
@@ -54,9 +55,9 @@ $Pseudo.focusout(function(){
                               $password.css("border-color","green");
                             
                          }
- }); 
 
- $Verif_password.focusout(function(){
+
+
                             if($Verif_password.val()!=$password.val()){
                               $span_verif_password.show();
                             $Verif_password.css("border-color","red");
@@ -70,10 +71,10 @@ $Pseudo.focusout(function(){
                                 $span_verif_password.hide();
                             
                          }
-  	});
+  
 
    
- $email.focusout(function(){
+
                            var sender_email = $email.val();
    
      
@@ -92,7 +93,7 @@ $Pseudo.focusout(function(){
      
     }
                          
-  	});
+  
 
    function validateForm()
 {
@@ -106,18 +107,6 @@ $Pseudo.focusout(function(){
 }
 
 
-
-// $envoi.click(function(event){
-
-// validate_form();
-      
-
-// });
-// $form.submit(function(event){
-
-     
-
-// });
 
 
    

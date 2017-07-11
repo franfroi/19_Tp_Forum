@@ -13,9 +13,15 @@ body {
 head {
 	position: relative;
 }
-.libelle {
+.libelle{
 	padding-top: 100px;
 }
+.tarten{
+	position: absolute;
+	margin-top: 200px;
+
+}
+
 h3 {
 	color: rgba(31, 41, 35, 0.9);
 	font-family: "Roboto";
@@ -23,6 +29,7 @@ h3 {
 	text-align: left;
 	
 }
+
 .text{
     
 	color: rgba(31, 41, 35, 0.9);
@@ -42,6 +49,7 @@ h3 {
 .navbar .navbar-collapse {
     text-align: center;
 }
-.span{
-	background-color: red;
+
+.borderform{
+	border: solid grey 2px;
 }

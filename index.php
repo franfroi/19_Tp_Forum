@@ -1,3 +1,18 @@
+<?php
+
+ $logout="";
+  $connect='<li>'.'<a href="view/Form_connexion.php"  >'.'Se connecter'.'</a>'.'</li>';
+ $compte='<li>'.'<a href="view/Form_inscription.php"  >'.'Créer compte'.'</a>'.'</li>';
+ $creersujet="";
+session_start();
+if(isset($_SESSION['id'])){
+    $id=$_SESSION['id'];
+     $logout='<li>'.'<a href="model/logout.php"  >'.'Se deconnecter'.'</a>'.'</li>';
+     $connect="";
+  $compte="";
+$creersujet='<input id="envoi" type="submit" class="btn btn-info" value="Créér un sujet">';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,14 +21,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-       <link rel="stylesheet" href="style/style.css" >
-
+      
 
           
         <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.css">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="Js/scroll.js"></script>
+         <link rel="stylesheet" href="style/style.css" >
+
         <title >Forum</title>
 </head>
 
@@ -33,11 +48,11 @@
             <ul class="nav navbar-nav ">
                     <li ><a href="" >Accueil</a></li>
                     <li><a href="#forum" >Forum</a></li>
-                     <li><a data-toggle="modal" data-backdrop="false" href="#form_suggestion">
-                         Créer un compte</a></li>
-                     <li><a data-toggle="modal" data-backdrop="false" href="#form_connnect">Se connecter</a></li>
-                     <li><a href="#forum" >Se déconnecter</a></li>
+                         <?php echo $compte;?>
+                         <?php echo $connect;?>
+                         <?php echo $logout;?>
                     <li><a href="#contact" >Contact</a></li>
+                    
             </ul>
         </div>
         
@@ -51,28 +66,37 @@
             
         <div class="row">
          
-                 <div class=" nopadding col-lg-1 col-md-1 hidden-sm hidden-xs ">
+                 <div class=" nopadding col-lg-3 col-md-3 col-sm-1 col-xs-1 ">
+                        
                         <div class="libelle">
-                        <h3 id="FORUM">Sujet</h3>
+                        
+                       <form name="form_create_sujet" method="POST" id="form_create_sujet"  action="view/Form_sujet.php" >
+                         <?php echo $creersujet?>
+                        </form> 
                         </div> 
+                       
                  </div>
                
 
-                         <div class=" col-lg-11 col-md-11 ">
-                             
-                             <div class="libelle" >                              
-                                 <h3 id="FORUM">   jdhjfhbfefbehefrtgiyugo</h3>
+                             <div  class=" col-lg-offset-3 col-lg-6  col-lg-offset-3 col-md-offset-3 col-md-6 col-md-offset-3 col-sm-offset-1 col-sm-5 col-sm-offset-1 col-xs-offset-1 col-xs-5  col-xs-offset-1 ">
+                             <div class="libelle">
+                        <h3 id="FORUM">Sujet</h3>
+                        </div> 
+                             <div class="libelle" >  
+                                                         
+                                 <h3 id="FORUM">  
+                                 ndnfdnd
+                                 </h3>
                                </div> 
-                         </div>
-        </div>
+                      
+                             </div>
 
 
   
 
 
+            </div>
 </div>
-<?php include "view/Form_inscription.php";?>
-<?php include "view/Form_connexion.php";?>
  </main> 
  <footer >
  </footer>
