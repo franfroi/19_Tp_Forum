@@ -1,5 +1,8 @@
 <?php
-
+/*
+ * Alfonso: le session_start ne doit être que dans l'index.php
+ * ET dans les services.
+ * */
  
 session_start();
 if(isset($_SESSION['id'])){
