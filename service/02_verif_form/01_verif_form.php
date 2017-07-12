@@ -10,7 +10,7 @@ if (!empty($_POST['password'])&&!empty($_POST['email'])){
        
 
     //connect base
-    include "01_connect_service.php";
+   include "../../service/01_connect_service.php";
 
       //verification password et envoie
 
@@ -59,12 +59,12 @@ if (!empty($_POST['password'])&&!empty($_POST['email'])){
   
           if($flag_nbr_pass==true && $flag_mail==true &&  $flag_validate==true){
             
-            header("Location:../index.php");
+            header("Location:../../index.php");
 
             }
 
           else{
-            header("Location:../view/Form_connexion.php");
+            header("Location:../../view/Form_connexion.php");
 
           }
 }

@@ -76,7 +76,7 @@ $ok_email=$_SESSION['ok_email'];
                          <br>
                          <h4 class="modal-title">Créer un compte</h4>
                          <br>
-    <form name="form_inscription" method="POST" id="form_inscription" onsubmit="return validateForm()" action="../service/Insert_form_inscription_service.php" >
+    <form name="form_inscription" method="POST" id="form_inscription" onsubmit="return validateForm()" action="../service/01_form_insert/Insert_form_inscription_service.php" >
                         <div class="form-group">
                             <label for="Pseudo">Pseudo</label>
                             <input id="Pseudo" type="text" class="form-control" name ="Pseudo" placeholder="Votre Pseudo 8 caractères min" value="<?php echo $Pseudo ?>" required  />

@@ -4,8 +4,7 @@
 session_start();
 if(isset($_SESSION['id'])){
     $id=$_SESSION['id'];
-   // echo $id;
-   }
+    echo $id;}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +22,7 @@ if(isset($_SESSION['id'])){
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="../style/style.css" >
-        <title >Form sujet</title>
+        <title >Form inscription</title>
 </head>
 
 <body>
@@ -39,12 +38,12 @@ if(isset($_SESSION['id'])){
         <div class="row">
           <div  class=" col-lg-offset-3 col-lg-6  col-lg-offset-3 col-md-offset-3 col-md-6 col-md-offset-3 col-sm-offset-1 col-sm-5 col-sm-offset-1 col-xs-offset-1 col-xs-5  col-xs-offset-1 ">
                          <br>
-                         <h4 class="modal-title">Créer un sujet</h4>
+                         <h4 class="modal-title">Créer un message</h4>
                          <br>
-                        <form name="form_inscription" method="POST" id="form_sujet"  action="../service/01_form_insert/Insert_form_sujet_service.php" >
+                        <form name="form_message" method="POST" id="form_message"  action="../service/Insert_form_message_service.php" >
                         
                         <div class="form-group">
-                            <label for="Titre">Titre du sujet</label>
+                            <label for="Titre">Message</label>
                             <input id="Titre" type="text" class="form-control" name ="Titre"  required  />
                          </div>
 

@@ -30,7 +30,7 @@ CREATE TABLE `sujet` (
   PRIMARY KEY (`id`),
   KEY `username_id` (`username_id`),
   CONSTRAINT `sujet_ibfk_1` FOREIGN KEY (`username_id`) REFERENCES `user` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -39,6 +39,7 @@ CREATE TABLE `sujet` (
 
 LOCK TABLES `sujet` WRITE;
 /*!40000 ALTER TABLE `sujet` DISABLE KEYS */;
+INSERT INTO `sujet` VALUES (20,'Le dev pour les nuls',28,'2017-07-12 16:48:10'),(21,'Delphine dis que php c\'est dur',29,'2017-07-12 16:51:34');
 /*!40000 ALTER TABLE `sujet` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-07-11 17:05:32
+-- Dump completed on 2017-07-12 16:53:57

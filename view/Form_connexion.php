@@ -63,7 +63,7 @@ $verif_mail=$_SESSION['verif_mail'] ;
                          <br>
                          <h4 class="modal-title">Connexion</h4>
                          <br>
-                    <form name="form_inscription" method="POST" id="form_connexion" action="../service/connect_service.php">
+                    <form name="form_inscription" method="POST" id="form_connexion" action="../service/02_verif_form/01_verif_form.php">
                         <div class="form-group">
                             <label for="password">Password</label>
                             <input id="password_connect" type="password" class="form-control" name ="password" placeholder="Votre Password" autofocus required />

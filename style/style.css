@@ -21,7 +21,9 @@ head {
 	margin-top: 200px;
 
 }
-
+tr{
+	width: 200px;
+}
 h3 {
 	color: rgba(31, 41, 35, 0.9);
 	font-family: "Roboto";
@@ -52,4 +54,28 @@ h3 {
 
 .borderform{
 	border: solid grey 2px;
+}
+table {
+
+width: 100%;
+}
+
+
+tr:nth-child(even) {
+	background:#FFF;
+	height:20px;
+	 }
+tr:nth-child(odd) {
+	background: #CCC;
+	height: 60px;
+	
+	}
+.petit{
+
+	font-size: 10px;
+}
+.grand{
+	width: 80%;
+	font-size: 20px;
+	
 }

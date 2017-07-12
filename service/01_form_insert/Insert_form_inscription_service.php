@@ -13,7 +13,7 @@ if (!empty($_POST['Pseudo']) && !empty($_POST['password'])
         $avatar=$_POST['avatar'];
 
     //connect base
-    include "01_connect_service.php";
+   include "../../service/01_connect_service.php";
 
       //verif pseud<8
       $_SESSION['Pseudo'] = $Pseudo;
@@ -128,11 +128,11 @@ if (!empty($_POST['Pseudo']) && !empty($_POST['password'])
             ,user_user=:user_user,uPassword=:uPassword , email=:email, avatar=:avatar,datecreate=now()');
             $req_insert->execute(array('username'=>$Pseudo,'user_admin'=>'non','user_user'=>'oui','uPassword'=>$password,'email'=>$email,'avatar'=>$avatar));
             session_destroy();
-             header("Location:../view/Form_connexion.php");
+             header("Location:../../view/Form_connexion.php");
             }
 
           else{
-            header("Location:../view/Form_inscription.php");
+            header("Location:../../view/Form_inscription.php");
 
           }
 }

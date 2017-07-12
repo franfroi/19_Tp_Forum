@@ -1,0 +1,13 @@
+
+table {
+border: solid grey 2px;;
+width: 100%;
+}
+
+
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}
+.petit{
+
+	font-size: 10px;
+}
