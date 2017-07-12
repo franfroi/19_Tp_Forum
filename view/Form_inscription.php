@@ -1,6 +1,9 @@
 <?php 
 
-
+/*
+ * Alfonso: je pense que ce travail avec les variables que tu fais
+ * devrait être dans le controleur (index.php)
+ * */
 session_start();
 
 $Pseudo="" ;

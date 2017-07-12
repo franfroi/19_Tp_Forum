@@ -12,6 +12,15 @@ if(isset($_SESSION['id'])){
   $compte="";
 $creersujet='<input id="envoi" type="submit" class="btn btn-info" value="Créér un sujet">';
 }
+
+
+/*
+ * Alfonso: je pense que l'index devrait être un switch comme
+ * j'ai donné dans le dossier MVC du cours.
+ *
+ * Je pense que tu auras juste des redirections à retravailler
+ * */
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
