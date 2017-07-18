@@ -1,0 +1,21 @@
+
+
+/****
+* Alfonso: Bon je vois que tu sais faire plein de choses.. c'est évident
+* Par contre maintenant tu as un niveau ou tu dois structurer ton code un peu plus par exemple
+* les services devraient avoir une nomenclature du genre loginService.php ou inscriptionService.php comme ça
+* à première vue on peut savoir ce que font les fichiers.
+*
+*
+* Aussi il fallait chercher à faire des fonctions. C'est important pour avoir une vision organisationnelle
+* différentes. Ceci était sensé préparer le terrain pour la programmation orienté objet.
+* Autrement c'est Baghdad, on retrouve des patés de code qui difficilement maintenable et on passe son temps
+* à se demander d'ou viennent les bugs.
+*
+* Tu vois que refactoriser pour implémenter le modèle MVC en plein milieu de la bataille est un vrai bordel.
+* C'est pour ça qu'il vaut mieux être un peu plus lent et implémenter les bons automatismes.
+*
+* La difficulté pour ce qui ont un peu d'expérience comme toi c'est de désapprendre ce qu'ils savent pour
+* implémenter une logique différente.
+*
+* En tout cas tu as une bonne utilisation du SQL. C'est une bonne expérience à retenir pour la prochaine fois.
