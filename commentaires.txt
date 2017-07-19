@@ -10,7 +10,7 @@
 * Aussi il fallait chercher à faire des fonctions. C'est important pour avoir une vision organisationnelle
 * différentes. Ceci était sensé préparer le terrain pour la programmation orienté objet.
 * Autrement c'est Baghdad, on retrouve des patés de code qui difficilement maintenable et on passe son temps
-* à se demander d'ou viennent les bugs.
+* à se demander d'ou viennent les bugs. À la fin on se tire une balle.
 *
 * Tu vois que refactoriser pour implémenter le modèle MVC en plein milieu de la bataille est un vrai bordel.
 * C'est pour ça qu'il vaut mieux être un peu plus lent et implémenter les bons automatismes.
@@ -18,4 +18,16 @@
 * La difficulté pour ce qui ont un peu d'expérience comme toi c'est de désapprendre ce qu'ils savent pour
 * implémenter une logique différente.
 *
-* En tout cas tu as une bonne utilisation du SQL. C'est une bonne expérience à retenir pour la prochaine fois.
+* Bon après je suis conscient que tu as été bloqué un bon bout de temps
+* avec le formulaire javacript.
+* Vous êtes deux à avoir tenter l'expérience avec beaucoup de problèmes finalement (Stéphane aussi).
+* Il est clair que le javascript est plus jolie et dynamique mais il comporte plein de difficultés avec des résultats
+* parfois inespéré. Je devrais revoir ce code javascript quand j'aurais le temps...
+*
+* Aussi je vois que tu as été bloqué par des conditions de ifs imbriqués. À mon avis il faut utiliser des conditions
+*
+*
+* En tout cas tu as une bonne utilisation du SQL. Je pense que tu peux être un bon programmeur il te faut plus de
+* méthode et de structure.
+*
+* Regarde un peux l'exemple que je vais donner. Merci pour tes efforts
